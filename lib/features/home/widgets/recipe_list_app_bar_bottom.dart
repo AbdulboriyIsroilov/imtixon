@@ -47,6 +47,13 @@ class _RecipeListAppBarBottomState extends State<RecipeListAppBarBottom> {
                         (index) => GestureDetector(
                           onTap: () {
                             activIndex = index;
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: Text(
+                                  "${vm.categoriy[index].title} bosildi",
+                                ),
+                              ),
+                            );
                             setState(() {});
                           },
                           child: Container(

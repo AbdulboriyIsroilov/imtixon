@@ -3,8 +3,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:imtixon/core/router/routers.dart';
 import 'package:imtixon/data/repositores/home_repository.dart';
 import 'package:imtixon/features/home/manegers/home_view_model.dart';
-import 'package:imtixon/features/home/pages/home_page.dart';
-import 'package:imtixon/features/home/pages/splash_page.dart';
+
 import 'package:provider/provider.dart';
 
 void main() {

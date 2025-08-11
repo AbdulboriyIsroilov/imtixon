@@ -8,6 +8,9 @@ class CategoriesModel {
   });
 
   factory CategoriesModel.fromJson(Map<String, dynamic> json) {
-    return CategoriesModel(title: json["title"] ?? "", id: json["id"]);
+    return CategoriesModel(
+      title: json["title"] ?? "",
+      id: json["id"],
+    );
   }
 }

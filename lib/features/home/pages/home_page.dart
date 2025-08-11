@@ -23,22 +23,25 @@ class HomePage extends StatelessWidget {
         bottom: RecipeListAppBarBottom(),
       ),
       body: SingleChildScrollView(
-        child: Column(
-          spacing: 19.h,
-          children: [
-            HomePageTrending(),
-            HomePageYourRecipes(),
-            Padding(
-              padding: EdgeInsets.symmetric(horizontal: 36.w, vertical: 19.h),
-              child: Column(
-                spacing: 19.h,
-                children: [
-                  HomePageTopChef(),
-                  HomePageRecently(),
-                ],
+        child: Padding(
+          padding:  EdgeInsets.only(bottom: 126.h),
+          child: Column(
+            spacing: 19.h,
+            children: [
+              HomePageTrending(),
+              HomePageYourRecipes(),
+              Padding(
+                padding: EdgeInsets.symmetric(horizontal: 36.w, vertical: 19.h),
+                child: Column(
+                  spacing: 19.h,
+                  children: [
+                    HomePageTopChef(),
+                    HomePageRecently(),
+                  ],
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       bottomNavigationBar: Stack(

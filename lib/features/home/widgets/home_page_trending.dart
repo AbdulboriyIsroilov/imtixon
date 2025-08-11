@@ -5,7 +5,7 @@ import 'package:imtixon/core/utils/app_colors.dart';
 import 'package:imtixon/core/utils/app_style.dart';
 import 'package:imtixon/core/utils/app_svg.dart';
 import 'package:imtixon/features/home/manegers/home_view_model.dart';
-import 'package:imtixon/features/home/widgets/icon_button_popular.dart';
+import 'package:imtixon/features/common/icon_button_popular.dart';
 import 'package:provider/provider.dart';
 
 class HomePageTrending extends StatelessWidget {

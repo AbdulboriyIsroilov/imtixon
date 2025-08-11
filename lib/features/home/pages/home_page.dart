@@ -6,6 +6,8 @@ import 'package:imtixon/features/home/widgets/home_page_recently.dart';
 import 'package:imtixon/features/home/widgets/home_page_top_chef.dart';
 import 'package:imtixon/features/home/widgets/home_page_your_recipes.dart';
 
+import '../../common/bottom_navigation_bar_gradient.dart';
+import '../../common/bottom_navigation_bar_main.dart';
 import '../widgets/app_bar_widget.dart';
 import '../widgets/recipe_list_app_bar_bottom.dart';
 
@@ -15,6 +17,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      extendBody: true,
       backgroundColor: AppColors.backgroundColor,
       appBar: AppBarWidget(
         bottom: RecipeListAppBarBottom(),
@@ -37,6 +40,13 @@ class HomePage extends StatelessWidget {
             ),
           ],
         ),
+      ),
+      bottomNavigationBar: Stack(
+        alignment: Alignment.bottomCenter,
+        children: [
+          BottomNavigationBarGradient(),
+          BottomNavigationBarMain(),
+        ],
       ),
     );
   }

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:imtixon/core/utils/app_style.dart';
 import 'package:imtixon/core/utils/app_svg.dart';
-import 'package:imtixon/features/home/widgets/icon_button_popular.dart';
+import 'package:imtixon/features/common/icon_button_popular.dart';
 
 import '../../../core/utils/app_colors.dart';
 
